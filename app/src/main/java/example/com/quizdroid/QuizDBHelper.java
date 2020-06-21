@@ -94,7 +94,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         //questions for category fragments
         mQuestionList.add(new Question("Un Fragmento representa", "una llamada a un servicio", "un clase especial de servicio", "una sección de una vista", "una parte de una FragmentActivity", "una parte de una FragmentActivity", CATEGORY_FRAGMENTS));
         mQuestionList.add(new Question("¿Cuál de estos métodos no pertence al ciclo de vida de un fragmento?", "onAttached()", "onCreateView()", "onActivityCreated()", "onStart()", "onAttached()", CATEGORY_FRAGMENTS));
-        mQuestionList.add(new Question("Which of these words means \"substitute\"?", "prediction", "period", "proof", "proxy", "proxy", CATEGORY_FRAGMENTS));
+        mQuestionList.add(new Question("¿Cuál de las siguientes no es una subclase de Fragment?", "DialogFragment", "ListFragment", "PreferenceFragmentCompat", "ModalFragment", "ModalFragment", CATEGORY_FRAGMENTS));
 
         //questions for category activities
         mQuestionList.add(new Question("Una actividad, para la interacción del usuario, proporciona:", "una interfaz visual", "una API REST", "un servicio SOAP", "un método interaction()", "una interfaz visual", CATEGORY_ACTIVITIES));
