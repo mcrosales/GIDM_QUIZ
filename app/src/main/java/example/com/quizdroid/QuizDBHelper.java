@@ -103,11 +103,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         mQuestionList.add(new Question("Which is a synonym of acute?", "severe", "tired", "long", "open", "severe", CATEGORY_WORD));
 
         //questions for category activities
-        mQuestionList.add(new Question("Saludate?", "Andrea Pirlo", "Dirk Kuyt", "Francesco Totti", "Philipp Lahm", "Francesco Totti", CATGORY_ACTIVITIES));
-        mQuestionList.add(new Question("Which tennis player made it to three singles grand slam finals in 2017?", "Venus Williams", "Rafael Nadal", "Roger Federer", "Serena Williams", "Rafael Nadal", CATGORY_ACTIVITIES));
-        mQuestionList.add(new Question("Which was the 1st non Test playing country to beat India in an international match?", "Canada", "Sri Lanka", "Zimbabwe", "East Africa", "Sri Lanka", CATGORY_ACTIVITIES));
-        mQuestionList.add(new Question("The term 'Beamer' is associated with", "Football", "Hockey", "Cricket", "Chess", "Cricket", CATGORY_ACTIVITIES));
-        mQuestionList.add(new Question("Jahangir Khan is famous for", "Boxing", "Squash", "Hockey", "Cricket", "Squash", CATGORY_ACTIVITIES));
+        mQuestionList.add(new Question("Una actividad, para la interacción del usuario, proporciona:", "una interfaz visual", "una API REST", "un servicio SOAP", "un método interaction()", "una interfaz visual", CATGORY_ACTIVITIES));
+        mQuestionList.add(new Question("¿Cuántas tareas de un usuario debe soportar una actividad?", "Máximo 2", "Una", "0", "Múltiples", "Una", CATGORY_ACTIVITIES));
+        mQuestionList.add(new Question("¿Cuál de estos métodos no pertence al ciclo de vida de las actividades?", "onStart()", "onResume()", "onRestart()", "onUpdate()", "onUpdate()", CATGORY_ACTIVITIES));
+
     }
 
     private void insertQuestions() {
