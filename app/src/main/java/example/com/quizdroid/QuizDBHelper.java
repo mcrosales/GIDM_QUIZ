@@ -18,8 +18,8 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "quizzes.db";
     private static final int DB_VERSION = 8;
 
-    public static final String CATGORY_ACTIVITIES = "activities";
-    public static final String CATEGORY_TV = "tv";
+    public static final String CATEGORY_ACTIVITIES = "activities";
+    public static final String CATEGORY_INTENTS = "intents";
     public static final String CATEGORY_MOVIES = "movies";
     public static final String CATEGORY_INDIA = "india";
     public static final String CATEGORY_WORD = "words";
@@ -81,12 +81,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         mQuestionList.add(new Question("Who played the role of Ernst Stavro Blofeld in Bond movie Never Say Never Again?", "Robert Shaw", "Christopher Lee", "Julian Gover", "Max Von Sydow", "Max Von Sydow", CATEGORY_MOVIES));
         mQuestionList.add(new Question("Ayelet Zurer played which role in Angels and Demons (2009)?", "Elizabeth Sinskey", "Sienna Brooks", "Vittoria Vettra", "Sophie Neveu", "Vittoria Vettra", CATEGORY_MOVIES));
 
-        //questions for category tv
-        mQuestionList.add(new Question("Which famous person does Phoebe believe is her Grandfather?", "Albert Einstein", "Isaac Newton", "Winston Churchill", "Beethoven", "Albert Einstein", CATEGORY_TV));
-        mQuestionList.add(new Question("What is the name of the main family in this US TV series - Beverly Hills, 90210", "Keaton", "Walsh", "Tanner", "Crane", "Walsh", CATEGORY_TV));
-        mQuestionList.add(new Question("What is Sheldon's middle name?", "Leonard", "John", "Lee", "Brian", "Lee", CATEGORY_TV));
-        mQuestionList.add(new Question("What was finally revealed to be Jon Snow's real name in Game of Thrones?", "Aemon Targaryen", "Aegon Targaryen", "Viserys Targeryan", "Rhaegar Targeryan", "Aegon Targaryen", CATEGORY_TV));
-        mQuestionList.add(new Question("What is Pied Piper?", "A company", "A scary story", "A song", "A bank", "A company", CATEGORY_TV));
+        //questions for category intents
+        mQuestionList.add(new Question("Un intent es una estructura de datos que representa", "una operación o un evento", "una operación", "un evento", "ninguna de las anteriores", "una operación o un evento", CATEGORY_INTENTS));
+        mQuestionList.add(new Question("El intent lo construye", "otro intent", "un servicio", "una actividad", "una tarea", "una actividad", CATEGORY_INTENTS));
+        mQuestionList.add(new Question("¿Cuál campo de los siguientes no pertence a un intent?", "Action", "Data", "Template", "Category", "Template", CATEGORY_INTENTS));
 
         //questions for category science
         mQuestionList.add(new Question("What is the first element on the periodic table?", "Uranium", "Helium", "Hydrogen", "Carbon", "Hydrogen", CATEGORY_SCIENCE));
@@ -103,9 +101,9 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         mQuestionList.add(new Question("Which is a synonym of acute?", "severe", "tired", "long", "open", "severe", CATEGORY_WORD));
 
         //questions for category activities
-        mQuestionList.add(new Question("Una actividad, para la interacción del usuario, proporciona:", "una interfaz visual", "una API REST", "un servicio SOAP", "un método interaction()", "una interfaz visual", CATGORY_ACTIVITIES));
-        mQuestionList.add(new Question("¿Cuántas tareas de un usuario debe soportar una actividad?", "Máximo 2", "Una", "0", "Múltiples", "Una", CATGORY_ACTIVITIES));
-        mQuestionList.add(new Question("¿Cuál de estos métodos no pertence al ciclo de vida de las actividades?", "onStart()", "onResume()", "onRestart()", "onUpdate()", "onUpdate()", CATGORY_ACTIVITIES));
+        mQuestionList.add(new Question("Una actividad, para la interacción del usuario, proporciona:", "una interfaz visual", "una API REST", "un servicio SOAP", "un método interaction()", "una interfaz visual", CATEGORY_ACTIVITIES));
+        mQuestionList.add(new Question("¿Cuántas tareas de un usuario debe soportar una actividad?", "Máximo 2", "Una", "0", "Múltiples", "Una", CATEGORY_ACTIVITIES));
+        mQuestionList.add(new Question("¿Cuál de estos métodos no pertence al ciclo de vida de las actividades?", "onStart()", "onResume()", "onRestart()", "onUpdate()", "onUpdate()", CATEGORY_ACTIVITIES));
 
     }
 
