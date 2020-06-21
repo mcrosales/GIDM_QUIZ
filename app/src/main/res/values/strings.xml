@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">QuizDroid</string>
-    <string name="category">Categories</string>
+    <string name="app_name">QuizGIDM</string>
+    <string name="category">Temas</string>
 
-    <string name="sports_category">Sports</string>
+    <string name="activities_category">Actividades</string>
     <string name="tv_category">TV</string>
     <string name="movies_category">Movies</string>
     <string name="words_category">Word Play</string>
     <string name="india_category">Where in India?</string>
     <string name="science_category">Science</string>
     <string-array name="category_title">
-        <item>@string/sports_category</item>
+        <item>@string/activities_category</item>
         <item>@string/tv_category</item>
         <item>@string/movies_category</item>
         <item>@string/words_category</item>
@@ -17,7 +17,7 @@
         <item>@string/science_category</item>
     </string-array>
 
-    <string name="sports">sports</string>
+    <string name="activities">activities</string>
     <string name="tv">tv</string>
     <string name="movies">movies</string>
     <string name="words">words</string>
@@ -25,7 +25,7 @@
     <string name="science">science</string>
     <string name="grid_image">Grid Image</string>
     <string-array name="category_ID">
-        <item>@string/sports</item>
+        <item>@string/activities</item>
         <item>@string/tv</item>
         <item>@string/movies</item>
         <item>@string/words</item>
