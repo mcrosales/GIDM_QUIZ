@@ -20,7 +20,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
 
     public static final String CATEGORY_ACTIVITIES = "activities";
     public static final String CATEGORY_INTENTS = "intents";
-    public static final String CATEGORY_MOVIES = "movies";
+    public static final String CATEGORY_PERMISSIONS = "permissions";
     public static final String CATEGORY_INDIA = "india";
     public static final String CATEGORY_WORD = "words";
     public static final String CATEGORY_SCIENCE = "science";
@@ -74,12 +74,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         mQuestionList.add(new Question("Which state is irrigated by the Ganga canal?", "Uttar Pradesh", "Bihar", "West Bengal", "Rajasthan", "Rajasthan", CATEGORY_INDIA));
         mQuestionList.add(new Question("The famous Gir forests are located in", "Mysore", "Kashmir", "Gujarat", "Kerala", "Gujarat", CATEGORY_INDIA));
 
-        //questions for category movies
-        mQuestionList.add(new Question("What classic film ends with the line \"After all, tomorrow is another day!\"?", "It's a wonderful life", "Gone with the wind", "Singin' in the rain", "The sound of music", "Gone with the wind", CATEGORY_MOVIES));
-        mQuestionList.add(new Question("Who starred alongside Will Smith in Men in Black 3?", "Danel Craig", "Tommy Lee Jones", "Tom Selleck", "Val Kilmer", "Tommy Lee Jones", CATEGORY_MOVIES));
-        mQuestionList.add(new Question("What color is \"The Incredible Hulk\"?", "Green", "Purple", "Blue", "Grey", "Green", CATEGORY_MOVIES));
-        mQuestionList.add(new Question("Who played the role of Ernst Stavro Blofeld in Bond movie Never Say Never Again?", "Robert Shaw", "Christopher Lee", "Julian Gover", "Max Von Sydow", "Max Von Sydow", CATEGORY_MOVIES));
-        mQuestionList.add(new Question("Ayelet Zurer played which role in Angels and Demons (2009)?", "Elizabeth Sinskey", "Sienna Brooks", "Vittoria Vettra", "Sophie Neveu", "Vittoria Vettra", CATEGORY_MOVIES));
+        //questions for category permissions
+        mQuestionList.add(new Question("Los permisos se definen", "en el archivo strings.xml", "en el archivo build.gradle", "en el archivo AndroidManifest.xml", "en una clase", "en el archivo AndroidManifest.xml", CATEGORY_PERMISSIONS));
+        mQuestionList.add(new Question("Los permisos se representan como", "String", "char[]", "int", "Integer", "String", CATEGORY_PERMISSIONS));
+        mQuestionList.add(new Question("Las aplicaciones especifican los permisos que usan mediante una etiqueta", "<uses-permission>", "<has-permission>", "<permission>", "<granted-permission>", "<uses-permission>", CATEGORY_PERMISSIONS));
 
         //questions for category intents
         mQuestionList.add(new Question("Un intent es una estructura de datos que representa", "una operación o un evento", "una operación", "un evento", "ninguna de las anteriores", "una operación o un evento", CATEGORY_INTENTS));
