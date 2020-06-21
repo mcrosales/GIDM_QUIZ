@@ -21,7 +21,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     public static final String CATEGORY_ACTIVITIES = "activities";
     public static final String CATEGORY_INTENTS = "intents";
     public static final String CATEGORY_PERMISSIONS = "permissions";
-    public static final String CATEGORY_INDIA = "india";
+    public static final String CATEGORY_USER_INTERFACE = "user_interface";
     public static final String CATEGORY_FRAGMENTS = "fragments";
     public static final String CATEGORY_SCIENCE = "science";
 
@@ -67,12 +67,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     private void setUpQuestions() {
         mQuestionList = new ArrayList<>();
 
-        //questions for category india
-        mQuestionList.add(new Question("What Indian city is the capital of two states?", "Mumbai", "Kolkatta", "Chennai", "Chandigarh", "Chandigarh", CATEGORY_INDIA));
-        mQuestionList.add(new Question("Which is the smallest (in area) of the following Union Territories?", "Lakshadweep", "Chandigardh", "Daman & Diu", "Delhi", "Lakshadweep", CATEGORY_INDIA));
-        mQuestionList.add(new Question("On which river has the Hirakud dam been built?", "Godavari", "Mahanadi", "Cauvery", "Periyar", "Mahanadi", CATEGORY_INDIA));
-        mQuestionList.add(new Question("Which state is irrigated by the Ganga canal?", "Uttar Pradesh", "Bihar", "West Bengal", "Rajasthan", "Rajasthan", CATEGORY_INDIA));
-        mQuestionList.add(new Question("The famous Gir forests are located in", "Mysore", "Kashmir", "Gujarat", "Kerala", "Gujarat", CATEGORY_INDIA));
+        //questions for category user interface
+        mQuestionList.add(new Question("Las Views son bloques constructivos básicos de componentes de UIs. ¿Cual de los siguientes no es un View predefinido?", "Button", "ToggleButton", "ModalButton", "CheckBox", "ModalButton", CATEGORY_USER_INTERFACE));
+        mQuestionList.add(new Question("¿Cuál de estas opciones no es un listener definido por la clase View?", "onClickListener", "onLongClickListener ", "onKeyListener", "onFocusUpdatedListener", "onFocusUpdatedListener", CATEGORY_USER_INTERFACE));
+        mQuestionList.add(new Question("¿Cuál de estas opciones no es un tipo de ViewGroup?", "RadioGroup", "TimePicker ", "DatePicker", "ImageGroup", "ImageGroup", CATEGORY_USER_INTERFACE));
 
         //questions for category permissions
         mQuestionList.add(new Question("Los permisos se definen", "en el archivo strings.xml", "en el archivo build.gradle", "en el archivo AndroidManifest.xml", "en una clase", "en el archivo AndroidManifest.xml", CATEGORY_PERMISSIONS));
