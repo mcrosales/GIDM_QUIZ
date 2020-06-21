@@ -5,14 +5,14 @@
     <string name="activities_category">Actividades</string>
     <string name="intents_category">Intents</string>
     <string name="permissions_category">Permisos</string>
-    <string name="words_category">Word Play</string>
+    <string name="fragments_category">Fragments</string>
     <string name="india_category">Where in India?</string>
     <string name="science_category">Science</string>
     <string-array name="category_title">
         <item>@string/activities_category</item>
         <item>@string/intents_category</item>
         <item>@string/permissions_category</item>
-        <item>@string/words_category</item>
+        <item>@string/fragments_category</item>
         <item>@string/india_category</item>
         <item>@string/science_category</item>
     </string-array>
@@ -20,7 +20,7 @@
     <string name="activities">activities</string>
     <string name="intents">intents</string>
     <string name="permissions">permissions</string>
-    <string name="words">words</string>
+    <string name="fragments">fragments</string>
     <string name="india">india</string>
     <string name="science">science</string>
     <string name="grid_image">Grid Image</string>
@@ -28,7 +28,7 @@
         <item>@string/activities</item>
         <item>@string/intents</item>
         <item>@string/permissions</item>
-        <item>@string/words</item>
+        <item>@string/fragments</item>
         <item>@string/india</item>
         <item>@string/science</item>
     </string-array>

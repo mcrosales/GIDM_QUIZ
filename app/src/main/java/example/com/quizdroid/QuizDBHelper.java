@@ -22,7 +22,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     public static final String CATEGORY_INTENTS = "intents";
     public static final String CATEGORY_PERMISSIONS = "permissions";
     public static final String CATEGORY_INDIA = "india";
-    public static final String CATEGORY_WORD = "words";
+    public static final String CATEGORY_FRAGMENTS = "fragments";
     public static final String CATEGORY_SCIENCE = "science";
 
     private final String CREATE_TABLE_QUERY = "CREATE TABLE " + QuestionsTable.TABLE_NAME +
@@ -76,8 +76,8 @@ public class QuizDBHelper extends SQLiteOpenHelper {
 
         //questions for category permissions
         mQuestionList.add(new Question("Los permisos se definen", "en el archivo strings.xml", "en el archivo build.gradle", "en el archivo AndroidManifest.xml", "en una clase", "en el archivo AndroidManifest.xml", CATEGORY_PERMISSIONS));
-        mQuestionList.add(new Question("Los permisos se representan como", "String", "char[]", "int", "Integer", "String", CATEGORY_PERMISSIONS));
         mQuestionList.add(new Question("Las aplicaciones especifican los permisos que usan mediante una etiqueta", "<uses-permission>", "<has-permission>", "<permission>", "<granted-permission>", "<uses-permission>", CATEGORY_PERMISSIONS));
+        mQuestionList.add(new Question("Los permisos se representan como", "String", "char[]", "int", "Integer", "String", CATEGORY_PERMISSIONS));
 
         //questions for category intents
         mQuestionList.add(new Question("Un intent es una estructura de datos que representa", "una operación o un evento", "una operación", "un evento", "ninguna de las anteriores", "una operación o un evento", CATEGORY_INTENTS));
@@ -91,12 +91,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         mQuestionList.add(new Question("What planet is closest in size to Earth?", "Mercury", "Mars", "Venus", "Jupiter", "Venus", CATEGORY_SCIENCE));
         mQuestionList.add(new Question("Who introduced the idea of natural selection?", "Herbert Spencer", "Charles Darwin", "Charles Dicken", "Karl Marx", "Charles Darwin", CATEGORY_SCIENCE));
 
-        //questions for category word
-        mQuestionList.add(new Question("Which is a synonym of vigilant?", "puzzled", "watchful", "unhealthy", "wide", "watchful", CATEGORY_WORD));
-        mQuestionList.add(new Question("Which of these is a word for an artistic critique?", "chanteuse", "charrette", "chariot", "charlatan", "charrette", CATEGORY_WORD));
-        mQuestionList.add(new Question("Which of these words means \"substitute\"?", "prediction", "period", "proof", "proxy", "proxy", CATEGORY_WORD));
-        mQuestionList.add(new Question("Which word means something like \"paradise\"?", "unicorn", "antelope", "utility", "utopia", "utopia", CATEGORY_WORD));
-        mQuestionList.add(new Question("Which is a synonym of acute?", "severe", "tired", "long", "open", "severe", CATEGORY_WORD));
+        //questions for category fragments
+        mQuestionList.add(new Question("Un Fragmento representa", "una llamada a un servicio", "un clase especial de servicio", "una sección de una vista", "una parte de una FragmentActivity", "una parte de una FragmentActivity", CATEGORY_FRAGMENTS));
+        mQuestionList.add(new Question("¿Cuál de estos métodos no pertence al ciclo de vida de un fragmento?", "onAttached()", "onCreateView()", "onActivityCreated()", "onStart()", "onAttached()", CATEGORY_FRAGMENTS));
+        mQuestionList.add(new Question("Which of these words means \"substitute\"?", "prediction", "period", "proof", "proxy", "proxy", CATEGORY_FRAGMENTS));
 
         //questions for category activities
         mQuestionList.add(new Question("Una actividad, para la interacción del usuario, proporciona:", "una interfaz visual", "una API REST", "un servicio SOAP", "un método interaction()", "una interfaz visual", CATEGORY_ACTIVITIES));
