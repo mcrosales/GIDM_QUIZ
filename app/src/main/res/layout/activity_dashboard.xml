@@ -62,12 +62,4 @@
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_margin="@dimen/dimen_16dp"
-        android:src="@drawable/ic_insert_emoticon_black_24dp"
-        app:layout_anchor="@id/appBar"
-        app:layout_anchorGravity="bottom|end" />
-
 </android.support.design.widget.CoordinatorLayout>
