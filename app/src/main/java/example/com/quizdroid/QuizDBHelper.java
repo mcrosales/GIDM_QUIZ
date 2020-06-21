@@ -18,12 +18,12 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "quizzes.db";
     private static final int DB_VERSION = 8;
 
-    public static final String CATEGORY_INTRODUCTION = "Introducción";
-    public static final String CATEGORY_TV = "tv";
-    public static final String CATEGORY_MOVIES = "movies";
-    public static final String CATEGORY_INDIA = "india";
-    public static final String CATEGORY_WORD = "words";
-    public static final String CATEGORY_SCIENCE = "science";
+    public static final String CATEGORY_ACTIVITIES = "activities";
+    public static final String CATEGORY_FRAGMENTS = "fragments";
+    public static final String CATEGORY_ALARMS = "alarms";
+    public static final String CATEGORY_INTERFACE = "interface";
+    public static final String CATEGORY_NOTIFICATIONS = "notifications";
+    public static final String CATEGORY_CONTENT_PROVIDERS = "content_providers";
 
     private final String CREATE_TABLE_QUERY = "CREATE TABLE " + QuestionsTable.TABLE_NAME +
             "(" +
@@ -68,46 +68,46 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         mQuestionList = new ArrayList<>();
 
         //questions for category india
-        mQuestionList.add(new Question("What Indian city is the capital of two states?", "Mumbai", "Kolkatta", "Chennai", "Chandigarh", "Chandigarh", CATEGORY_INDIA));
-        mQuestionList.add(new Question("Which is the smallest (in area) of the following Union Territories?", "Lakshadweep", "Chandigardh", "Daman & Diu", "Delhi", "Lakshadweep", CATEGORY_INDIA));
-        mQuestionList.add(new Question("On which river has the Hirakud dam been built?", "Godavari", "Mahanadi", "Cauvery", "Periyar", "Mahanadi", CATEGORY_INDIA));
-        mQuestionList.add(new Question("Which state is irrigated by the Ganga canal?", "Uttar Pradesh", "Bihar", "West Bengal", "Rajasthan", "Rajasthan", CATEGORY_INDIA));
-        mQuestionList.add(new Question("The famous Gir forests are located in", "Mysore", "Kashmir", "Gujarat", "Kerala", "Gujarat", CATEGORY_INDIA));
+        mQuestionList.add(new Question("What Indian city is the capital of two states?", "Mumbai", "Kolkatta", "Chennai", "Chandigarh", "Chandigarh", CATEGORY_INTERFACE));
+        mQuestionList.add(new Question("Which is the smallest (in area) of the following Union Territories?", "Lakshadweep", "Chandigardh", "Daman & Diu", "Delhi", "Lakshadweep", CATEGORY_INTERFACE));
+        mQuestionList.add(new Question("On which river has the Hirakud dam been built?", "Godavari", "Mahanadi", "Cauvery", "Periyar", "Mahanadi", CATEGORY_INTERFACE));
+        mQuestionList.add(new Question("Which state is irrigated by the Ganga canal?", "Uttar Pradesh", "Bihar", "West Bengal", "Rajasthan", "Rajasthan", CATEGORY_INTERFACE));
+        mQuestionList.add(new Question("The famous Gir forests are located in", "Mysore", "Kashmir", "Gujarat", "Kerala", "Gujarat", CATEGORY_INTERFACE));
 
         //questions for category movies
-        mQuestionList.add(new Question("What classic film ends with the line \"After all, tomorrow is another day!\"?", "It's a wonderful life", "Gone with the wind", "Singin' in the rain", "The sound of music", "Gone with the wind", CATEGORY_MOVIES));
-        mQuestionList.add(new Question("Who starred alongside Will Smith in Men in Black 3?", "Danel Craig", "Tommy Lee Jones", "Tom Selleck", "Val Kilmer", "Tommy Lee Jones", CATEGORY_MOVIES));
-        mQuestionList.add(new Question("What color is \"The Incredible Hulk\"?", "Green", "Purple", "Blue", "Grey", "Green", CATEGORY_MOVIES));
-        mQuestionList.add(new Question("Who played the role of Ernst Stavro Blofeld in Bond movie Never Say Never Again?", "Robert Shaw", "Christopher Lee", "Julian Gover", "Max Von Sydow", "Max Von Sydow", CATEGORY_MOVIES));
-        mQuestionList.add(new Question("Ayelet Zurer played which role in Angels and Demons (2009)?", "Elizabeth Sinskey", "Sienna Brooks", "Vittoria Vettra", "Sophie Neveu", "Vittoria Vettra", CATEGORY_MOVIES));
+        mQuestionList.add(new Question("What classic film ends with the line \"After all, tomorrow is another day!\"?", "It's a wonderful life", "Gone with the wind", "Singin' in the rain", "The sound of music", "Gone with the wind", CATEGORY_ALARMS));
+        mQuestionList.add(new Question("Who starred alongside Will Smith in Men in Black 3?", "Danel Craig", "Tommy Lee Jones", "Tom Selleck", "Val Kilmer", "Tommy Lee Jones", CATEGORY_ALARMS));
+        mQuestionList.add(new Question("What color is \"The Incredible Hulk\"?", "Green", "Purple", "Blue", "Grey", "Green", CATEGORY_ALARMS));
+        mQuestionList.add(new Question("Who played the role of Ernst Stavro Blofeld in Bond movie Never Say Never Again?", "Robert Shaw", "Christopher Lee", "Julian Gover", "Max Von Sydow", "Max Von Sydow", CATEGORY_ALARMS));
+        mQuestionList.add(new Question("Ayelet Zurer played which role in Angels and Demons (2009)?", "Elizabeth Sinskey", "Sienna Brooks", "Vittoria Vettra", "Sophie Neveu", "Vittoria Vettra", CATEGORY_ALARMS));
 
         //questions for category tv
-        mQuestionList.add(new Question("Which famous person does Phoebe believe is her Grandfather?", "Albert Einstein", "Isaac Newton", "Winston Churchill", "Beethoven", "Albert Einstein", CATEGORY_TV));
-        mQuestionList.add(new Question("What is the name of the main family in this US TV series - Beverly Hills, 90210", "Keaton", "Walsh", "Tanner", "Crane", "Walsh", CATEGORY_TV));
-        mQuestionList.add(new Question("What is Sheldon's middle name?", "Leonard", "John", "Lee", "Brian", "Lee", CATEGORY_TV));
-        mQuestionList.add(new Question("What was finally revealed to be Jon Snow's real name in Game of Thrones?", "Aemon Targaryen", "Aegon Targaryen", "Viserys Targeryan", "Rhaegar Targeryan", "Aegon Targaryen", CATEGORY_TV));
-        mQuestionList.add(new Question("What is Pied Piper?", "A company", "A scary story", "A song", "A bank", "A company", CATEGORY_TV));
+        mQuestionList.add(new Question("Which famous person does Phoebe believe is her Grandfather?", "Albert Einstein", "Isaac Newton", "Winston Churchill", "Beethoven", "Albert Einstein", CATEGORY_FRAGMENTS));
+        mQuestionList.add(new Question("What is the name of the main family in this US TV series - Beverly Hills, 90210", "Keaton", "Walsh", "Tanner", "Crane", "Walsh", CATEGORY_FRAGMENTS));
+        mQuestionList.add(new Question("What is Sheldon's middle name?", "Leonard", "John", "Lee", "Brian", "Lee", CATEGORY_FRAGMENTS));
+        mQuestionList.add(new Question("What was finally revealed to be Jon Snow's real name in Game of Thrones?", "Aemon Targaryen", "Aegon Targaryen", "Viserys Targeryan", "Rhaegar Targeryan", "Aegon Targaryen", CATEGORY_FRAGMENTS));
+        mQuestionList.add(new Question("What is Pied Piper?", "A company", "A scary story", "A song", "A bank", "A company", CATEGORY_FRAGMENTS));
 
         //questions for category science
-        mQuestionList.add(new Question("What is the first element on the periodic table?", "Uranium", "Helium", "Hydrogen", "Carbon", "Hydrogen", CATEGORY_SCIENCE));
-        mQuestionList.add(new Question("What constitutes the biggest part of the human brain?", "Cerebrum", "Cerebellum", "Thalamus", "Medula", "Cerebrum", CATEGORY_SCIENCE));
-        mQuestionList.add(new Question("Electric current is measured using what device?", "Anemometer", "Hygrometer", "Spectrometer", "Ammeter", "Ammeter", CATEGORY_SCIENCE));
-        mQuestionList.add(new Question("What planet is closest in size to Earth?", "Mercury", "Mars", "Venus", "Jupiter", "Venus", CATEGORY_SCIENCE));
-        mQuestionList.add(new Question("Who introduced the idea of natural selection?", "Herbert Spencer", "Charles Darwin", "Charles Dicken", "Karl Marx", "Charles Darwin", CATEGORY_SCIENCE));
+        mQuestionList.add(new Question("What is the first element on the periodic table?", "Uranium", "Helium", "Hydrogen", "Carbon", "Hydrogen", CATEGORY_CONTENT_PROVIDERS));
+        mQuestionList.add(new Question("What constitutes the biggest part of the human brain?", "Cerebrum", "Cerebellum", "Thalamus", "Medula", "Cerebrum", CATEGORY_CONTENT_PROVIDERS));
+        mQuestionList.add(new Question("Electric current is measured using what device?", "Anemometer", "Hygrometer", "Spectrometer", "Ammeter", "Ammeter", CATEGORY_CONTENT_PROVIDERS));
+        mQuestionList.add(new Question("What planet is closest in size to Earth?", "Mercury", "Mars", "Venus", "Jupiter", "Venus", CATEGORY_CONTENT_PROVIDERS));
+        mQuestionList.add(new Question("Who introduced the idea of natural selection?", "Herbert Spencer", "Charles Darwin", "Charles Dicken", "Karl Marx", "Charles Darwin", CATEGORY_CONTENT_PROVIDERS));
 
         //questions for category word
-        mQuestionList.add(new Question("Which is a synonym of vigilant?", "puzzled", "watchful", "unhealthy", "wide", "watchful", CATEGORY_WORD));
-        mQuestionList.add(new Question("Which of these is a word for an artistic critique?", "chanteuse", "charrette", "chariot", "charlatan", "charrette", CATEGORY_WORD));
-        mQuestionList.add(new Question("Which of these words means \"substitute\"?", "prediction", "period", "proof", "proxy", "proxy", CATEGORY_WORD));
-        mQuestionList.add(new Question("Which word means something like \"paradise\"?", "unicorn", "antelope", "utility", "utopia", "utopia", CATEGORY_WORD));
-        mQuestionList.add(new Question("Which is a synonym of acute?", "severe", "tired", "long", "open", "severe", CATEGORY_WORD));
+        mQuestionList.add(new Question("Which is a synonym of vigilant?", "puzzled", "watchful", "unhealthy", "wide", "watchful", CATEGORY_NOTIFICATIONS));
+        mQuestionList.add(new Question("Which of these is a word for an artistic critique?", "chanteuse", "charrette", "chariot", "charlatan", "charrette", CATEGORY_NOTIFICATIONS));
+        mQuestionList.add(new Question("Which of these words means \"substitute\"?", "prediction", "period", "proof", "proxy", "proxy", CATEGORY_NOTIFICATIONS));
+        mQuestionList.add(new Question("Which word means something like \"paradise\"?", "unicorn", "antelope", "utility", "utopia", "utopia", CATEGORY_NOTIFICATIONS));
+        mQuestionList.add(new Question("Which is a synonym of acute?", "severe", "tired", "long", "open", "severe", CATEGORY_NOTIFICATIONS));
 
         //questions for category sports
-        mQuestionList.add(new Question("Which of these footballers retired with fewer than 100 international caps?", "Andrea Pirlo", "Dirk Kuyt", "Francesco Totti", "Philipp Lahm", "Francesco Totti", CATEGORY_INTRODUCTION));
-        mQuestionList.add(new Question("Which tennis player made it to three singles grand slam finals in 2017?", "Venus Williams", "Rafael Nadal", "Roger Federer", "Serena Williams", "Rafael Nadal", CATEGORY_INTRODUCTION));
-        mQuestionList.add(new Question("Which was the 1st non Test playing country to beat India in an international match?", "Canada", "Sri Lanka", "Zimbabwe", "East Africa", "Sri Lanka", CATEGORY_INTRODUCTION));
-        mQuestionList.add(new Question("The term 'Beamer' is associated with", "Football", "Hockey", "Cricket", "Chess", "Cricket", CATEGORY_INTRODUCTION));
-        mQuestionList.add(new Question("Jahangir Khan is famous for", "Boxing", "Squash", "Hockey", "Cricket", "Squash", CATEGORY_INTRODUCTION));
+        mQuestionList.add(new Question("Which of these footballers retired with fewer than 100 international caps?", "Andrea Pirlo", "Dirk Kuyt", "Francesco Totti", "Philipp Lahm", "Francesco Totti", CATEGORY_ACTIVITIES));
+        mQuestionList.add(new Question("Which tennis player made it to three singles grand slam finals in 2017?", "Venus Williams", "Rafael Nadal", "Roger Federer", "Serena Williams", "Rafael Nadal", CATEGORY_ACTIVITIES));
+        mQuestionList.add(new Question("Which was the 1st non Test playing country to beat India in an international match?", "Canada", "Sri Lanka", "Zimbabwe", "East Africa", "Sri Lanka", CATEGORY_ACTIVITIES));
+        mQuestionList.add(new Question("The term 'Beamer' is associated with", "Football", "Hockey", "Cricket", "Chess", "Cricket", CATEGORY_ACTIVITIES));
+        mQuestionList.add(new Question("Jahangir Khan is famous for", "Boxing", "Squash", "Hockey", "Cricket", "Squash", CATEGORY_ACTIVITIES));
     }
 
     private void insertQuestions() {
