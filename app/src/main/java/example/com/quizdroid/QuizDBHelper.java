@@ -23,7 +23,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     public static final String CATEGORY_PERMISSIONS = "permissions";
     public static final String CATEGORY_USER_INTERFACE = "user_interface";
     public static final String CATEGORY_FRAGMENTS = "fragments";
-    public static final String CATEGORY_SCIENCE = "science";
+    public static final String CATEGORY_NOTIFICATIONS = "notifications";
 
     private final String CREATE_TABLE_QUERY = "CREATE TABLE " + QuestionsTable.TABLE_NAME +
             "(" +
@@ -82,12 +82,10 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         mQuestionList.add(new Question("El intent lo construye", "otro intent", "un servicio", "una actividad", "una tarea", "una actividad", CATEGORY_INTENTS));
         mQuestionList.add(new Question("¿Cuál campo de los siguientes no pertence a un intent?", "Action", "Data", "Template", "Category", "Template", CATEGORY_INTENTS));
 
-        //questions for category science
-        mQuestionList.add(new Question("What is the first element on the periodic table?", "Uranium", "Helium", "Hydrogen", "Carbon", "Hydrogen", CATEGORY_SCIENCE));
-        mQuestionList.add(new Question("What constitutes the biggest part of the human brain?", "Cerebrum", "Cerebellum", "Thalamus", "Medula", "Cerebrum", CATEGORY_SCIENCE));
-        mQuestionList.add(new Question("Electric current is measured using what device?", "Anemometer", "Hygrometer", "Spectrometer", "Ammeter", "Ammeter", CATEGORY_SCIENCE));
-        mQuestionList.add(new Question("What planet is closest in size to Earth?", "Mercury", "Mars", "Venus", "Jupiter", "Venus", CATEGORY_SCIENCE));
-        mQuestionList.add(new Question("Who introduced the idea of natural selection?", "Herbert Spencer", "Charles Darwin", "Charles Dicken", "Karl Marx", "Charles Darwin", CATEGORY_SCIENCE));
+        //questions for category notifications
+        mQuestionList.add(new Question("Un Toast es", "un botón", "menú desplegable", "mensaje temporal", "Carbon", "mensaje fijo", CATEGORY_NOTIFICATIONS));
+        mQuestionList.add(new Question("Para mostrar un Toast se utiliza la instrucción", "Toast.make()", "Toast.show()", "Toast.appear()", "Toast.bring()", "Toast.show()", CATEGORY_NOTIFICATIONS));
+        mQuestionList.add(new Question("Con el siguiente código: - Intent intent = new Intent(Settings.ACTION_CHANNEL_NOTIFICATION_SETTINGS); - se accede a", "pantalla de ajustes", "notificaciones disponibles", "canales disponibles", "nada", "pantalla de ajustes", CATEGORY_NOTIFICATIONS));
 
         //questions for category fragments
         mQuestionList.add(new Question("Un Fragmento representa", "una llamada a un servicio", "un clase especial de servicio", "una sección de una vista", "una parte de una FragmentActivity", "una parte de una FragmentActivity", CATEGORY_FRAGMENTS));
