@@ -18,7 +18,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "quizzes.db";
     private static final int DB_VERSION = 8;
 
-    public static final String CATEGORY_INTRODUCTION = "Introducción";
+    public static final String CATEGORY_SPORTS = "sports";
     public static final String CATEGORY_TV = "tv";
     public static final String CATEGORY_MOVIES = "movies";
     public static final String CATEGORY_INDIA = "india";
@@ -103,11 +103,11 @@ public class QuizDBHelper extends SQLiteOpenHelper {
         mQuestionList.add(new Question("Which is a synonym of acute?", "severe", "tired", "long", "open", "severe", CATEGORY_WORD));
 
         //questions for category sports
-        mQuestionList.add(new Question("Which of these footballers retired with fewer than 100 international caps?", "Andrea Pirlo", "Dirk Kuyt", "Francesco Totti", "Philipp Lahm", "Francesco Totti", CATEGORY_INTRODUCTION));
-        mQuestionList.add(new Question("Which tennis player made it to three singles grand slam finals in 2017?", "Venus Williams", "Rafael Nadal", "Roger Federer", "Serena Williams", "Rafael Nadal", CATEGORY_INTRODUCTION));
-        mQuestionList.add(new Question("Which was the 1st non Test playing country to beat India in an international match?", "Canada", "Sri Lanka", "Zimbabwe", "East Africa", "Sri Lanka", CATEGORY_INTRODUCTION));
-        mQuestionList.add(new Question("The term 'Beamer' is associated with", "Football", "Hockey", "Cricket", "Chess", "Cricket", CATEGORY_INTRODUCTION));
-        mQuestionList.add(new Question("Jahangir Khan is famous for", "Boxing", "Squash", "Hockey", "Cricket", "Squash", CATEGORY_INTRODUCTION));
+        mQuestionList.add(new Question("Which of these footballers retired with fewer than 100 international caps?", "Andrea Pirlo", "Dirk Kuyt", "Francesco Totti", "Philipp Lahm", "Francesco Totti", CATEGORY_SPORTS));
+        mQuestionList.add(new Question("Which tennis player made it to three singles grand slam finals in 2017?", "Venus Williams", "Rafael Nadal", "Roger Federer", "Serena Williams", "Rafael Nadal", CATEGORY_SPORTS));
+        mQuestionList.add(new Question("Which was the 1st non Test playing country to beat India in an international match?", "Canada", "Sri Lanka", "Zimbabwe", "East Africa", "Sri Lanka", CATEGORY_SPORTS));
+        mQuestionList.add(new Question("The term 'Beamer' is associated with", "Football", "Hockey", "Cricket", "Chess", "Cricket", CATEGORY_SPORTS));
+        mQuestionList.add(new Question("Jahangir Khan is famous for", "Boxing", "Squash", "Hockey", "Cricket", "Squash", CATEGORY_SPORTS));
     }
 
     private void insertQuestions() {
