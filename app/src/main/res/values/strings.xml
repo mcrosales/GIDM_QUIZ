@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">QuizGIDM</string>
-    <string name="category">Temas</string>
+    <string name="category">gidwQuiz</string>
 
     <string name="activities_category">Actividades</string>
     <string name="intents_category">Intents</string>

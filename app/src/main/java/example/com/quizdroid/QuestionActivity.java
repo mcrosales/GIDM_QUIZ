@@ -70,9 +70,9 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void displayScore() {
-        String scoreString = "Score " + mScore + "/" + mTotalQuestions;
+        String scoreString = "Puntuación " + mScore + "/" + mTotalQuestions;
         mScoreTextView.setText(scoreString);
-        mRemaningQuestionsTextView.setText("Remaining: " + mTotalQuestions--);
+        mRemaningQuestionsTextView.setText("Restantes: " + mTotalQuestions--);
     }
 
     public void updateScore() {

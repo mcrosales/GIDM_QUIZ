@@ -38,8 +38,14 @@ public class DashboardActivity extends AppCompatActivity {
 
         mColors = getResources().getIntArray(R.array.colors);
 
-        for(int i = 0; i< mCategoryTitles.length; i++) {
-            mCategoryItems.add(new CategoryItem(mColors[i], mCategoryTitles[i], mCategoryID[i]));
+        for (int i = 0; i < mCategoryTitles.length; i++) {
+            int colorValue = 0;
+            if (i % 2 == 0) {
+                colorValue = mColors[1];
+            } else {
+                colorValue = mColors[0];
+            }
+            mCategoryItems.add(new CategoryItem(colorValue, mCategoryTitles[i], mCategoryID[i]));
             Log.d("TAG", "Title\t" + mCategoryTitles[i] + "\tID\t" + mCategoryID[i]);
         }
     }

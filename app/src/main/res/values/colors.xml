@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#B53F51</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="purple">#AB47BC</color>
-    <color name="teal">#26A69A</color>
-    <color name="cyan">#26C6DA</color>
-    <color name="orange">#FFA726</color>
-    <color name="pink">#EC407A</color>
-    <color name="lightgreen">#9CCC65</color>
+    <color name="red">#B53F51</color>
+    <color name="gray">#77535151</color>
 
     <array name="colors">
-        <item>@color/purple</item>
-        <item>@color/teal</item>
-        <item>@color/cyan</item>
-        <item>@color/orange</item>
-        <item>@color/pink</item>
-        <item>@color/lightgreen</item>
+        <item>@color/red</item>
+        <item>@color/gray</item>
     </array>
 
     <color name="transparent_green">#7700ff00</color>
