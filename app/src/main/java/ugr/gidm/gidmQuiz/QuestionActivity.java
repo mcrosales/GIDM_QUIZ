@@ -1,21 +1,18 @@
-package example.com.quizdroid;
+package ugr.gidm.gidmQuiz;
 
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.View;
 import android.support.constraint.ConstraintLayout;
-import android.widget.TableLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-import static example.com.quizdroid.CategoryAdapter.CATEGORY_COLOR;
-import static example.com.quizdroid.CategoryAdapter.CATEGORY_ID;
+import static ugr.gidm.gidmQuiz.CategoryAdapter.CATEGORY_COLOR;
+import static ugr.gidm.gidmQuiz.CategoryAdapter.CATEGORY_ID;
 
 public class QuestionActivity extends AppCompatActivity {
 

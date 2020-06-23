@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="TextView" />
 
-        <example.com.quizdroid.ToggleButtonGroupTableLayout
+        <ugr.gidm.gidmQuiz.ToggleButtonGroupTableLayout
             android:id="@+id/table_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                     android:gravity="center"/>
 
             </TableRow>
-        </example.com.quizdroid.ToggleButtonGroupTableLayout>
+        </ugr.gidm.gidmQuiz.ToggleButtonGroupTableLayout>
 
     </android.support.constraint.ConstraintLayout>
 

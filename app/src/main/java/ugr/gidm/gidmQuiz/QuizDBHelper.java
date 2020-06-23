@@ -1,4 +1,4 @@
-package example.com.quizdroid;
+package ugr.gidm.gidmQuiz;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import example.com.quizdroid.QuizContract.QuestionsTable;
+import ugr.gidm.gidmQuiz.QuizContract.QuestionsTable;
 
 public class QuizDBHelper extends SQLiteOpenHelper {
 

@@ -1,4 +1,4 @@
-package example.com.quizdroid;
+package ugr.gidm.gidmQuiz;
 
 public class Question {
 

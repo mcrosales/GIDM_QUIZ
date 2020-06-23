@@ -1,10 +1,8 @@
-package example.com.quizdroid;
+package ugr.gidm.gidmQuiz;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.GridView;
 
 import java.util.ArrayList;

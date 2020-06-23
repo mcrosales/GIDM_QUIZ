@@ -1,4 +1,4 @@
-package example.com.quizdroid;
+package ugr.gidm.gidmQuiz;
 
 import android.content.Context;
 import android.graphics.Color;
