@@ -15,21 +15,21 @@ public class QuestionAdapter extends RecyclerView.Adapter {
 
     private Context mContext;
     private ArrayList<Question> mQuestionList;
-    private String mCategoryLabel;
+    private String mSubjectLabel;
 
-    QuestionAdapter(Context context, ArrayList<Question> questionList, String category) {
+    QuestionAdapter(Context context, ArrayList<Question> questionList, String subject) {
         this.mContext = context;
         this.mQuestionList = questionList;
-        this.mCategoryLabel = category;
+        this.mSubjectLabel = subject;
     }
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        mCategoryLabel = mCategoryLabel.length() > 2 ?
-                (mCategoryLabel.substring(0,1).toUpperCase() + mCategoryLabel.substring(1)) :
-                mCategoryLabel.toUpperCase();
-        ((QuestionActivity) mContext).setTitle(mCategoryLabel);
+        mSubjectLabel = mSubjectLabel.length() > 2 ?
+                (mSubjectLabel.substring(0,1).toUpperCase() + mSubjectLabel.substring(1)) :
+                mSubjectLabel.toUpperCase();
+        ((QuestionActivity) mContext).setTitle(mSubjectLabel);
         View questionView = LayoutInflater.from(mContext)
                 .inflate(R.layout.question_card_layout, parent, false);
         return new QuestionViewHolder(questionView);

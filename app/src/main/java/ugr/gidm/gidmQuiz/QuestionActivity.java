@@ -11,8 +11,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Objects;
 
-import static ugr.gidm.gidmQuiz.CategoryAdapter.CATEGORY_COLOR;
-import static ugr.gidm.gidmQuiz.CategoryAdapter.CATEGORY_ID;
+import static ugr.gidm.gidmQuiz.SubjectAdapter.SUBJECT_COLOR;
+import static ugr.gidm.gidmQuiz.SubjectAdapter.SUBJECT_ID;
 
 public class QuestionActivity extends AppCompatActivity {
 
@@ -35,14 +35,14 @@ public class QuestionActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        Bundle categoryBundle = null;
+        Bundle subjectBundle = null;
         if (getIntent() != null) {
-            categoryBundle = getIntent().getExtras();
+            subjectBundle = getIntent().getExtras();
         }
 
         mParentLayout = findViewById(R.id.question_layout);
-        if (categoryBundle != null) {
-            String hexColor = String.format("#%06X", (0xFFFFFF & categoryBundle.getInt(CATEGORY_COLOR)));
+        if (subjectBundle != null) {
+            String hexColor = String.format("#%06X", (0xFFFFFF & subjectBundle.getInt(SUBJECT_COLOR)));
             hexColor = "#44"+hexColor.substring(1);
             mParentLayout.setBackgroundColor(Color.parseColor(hexColor));
         }
@@ -54,14 +54,14 @@ public class QuestionActivity extends AppCompatActivity {
         mRecyclerView.setNestedScrollingEnabled(false);
         mRecyclerView.setHasFixedSize(true);
 
-        mDbHelper = new QuizDBHelper(this, categoryBundle);
-        if (categoryBundle != null) {
-            mQuestionList = mDbHelper.getAllQuestions(categoryBundle.getString(CATEGORY_ID));
+        mDbHelper = new QuizDBHelper(this, subjectBundle);
+        if (subjectBundle != null) {
+            mQuestionList = mDbHelper.getAllQuestions(subjectBundle.getString(SUBJECT_ID));
             mTotalQuestions = mQuestionList.size();
             mScore = 0;
             displayScore();
         }
-        mAdapter = new QuestionAdapter(this, mQuestionList, categoryBundle.getString(CATEGORY_ID));
+        mAdapter = new QuestionAdapter(this, mQuestionList, subjectBundle.getString(SUBJECT_ID));
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mAdapter);
     }

@@ -23,7 +23,7 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
-            app:title="@string/category"
+            app:title="@string/subject"
             app:collapsedTitleGravity="top">
 
             <android.support.v7.widget.Toolbar

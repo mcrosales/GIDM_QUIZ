@@ -7,7 +7,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/category_image"
+        android:id="@+id/subject_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:src="@tools:sample/avatars"
@@ -19,7 +19,7 @@
         android:contentDescription="@string/grid_image" />
 
     <TextView
-        android:id="@+id/category_title"
+        android:id="@+id/subject_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"

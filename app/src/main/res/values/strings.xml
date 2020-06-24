@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name">QuizGIDM</string>
-    <string name="category">gidwQuiz</string>
+    <string name="subject">gidwQuiz</string>
 
-    <string name="activities_category">Actividades</string>
-    <string name="intents_category">Intents</string>
-    <string name="permissions_category">Permisos</string>
-    <string name="fragments_category">Fragments</string>
-    <string name="user_interface_category">Interfaz de usuario</string>
-    <string name="notifications_category">Notificaciones</string>
-    <string-array name="category_title">
-        <item>@string/activities_category</item>
-        <item>@string/intents_category</item>
-        <item>@string/permissions_category</item>
-        <item>@string/fragments_category</item>
-        <item>@string/user_interface_category</item>
-        <item>@string/notifications_category</item>
+    <string name="activities_subject">Actividades</string>
+    <string name="intents_subject">Intents</string>
+    <string name="permissions_subject">Permisos</string>
+    <string name="fragments_subject">Fragments</string>
+    <string name="user_interface_subject">Interfaz de usuario</string>
+    <string name="notifications_subject">Notificaciones</string>
+    <string-array name="subject_title">
+        <item>@string/activities_subject</item>
+        <item>@string/intents_subject</item>
+        <item>@string/permissions_subject</item>
+        <item>@string/fragments_subject</item>
+        <item>@string/user_interface_subject</item>
+        <item>@string/notifications_subject</item>
     </string-array>
 
     <string name="activities">activities</string>
@@ -24,7 +24,7 @@
     <string name="user_interface">user_interface</string>
     <string name="notifications">notifications</string>
     <string name="grid_image">Grid Image</string>
-    <string-array name="category_ID">
+    <string-array name="subject_ID">
         <item>@string/activities</item>
         <item>@string/intents</item>
         <item>@string/permissions</item>
